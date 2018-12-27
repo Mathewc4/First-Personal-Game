@@ -10,10 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let 
     
     
-    //Press the boxes and then it will give choice of "X" or "O"
+    
+    //Blank Box Buttons
     @IBAction func BlankBoxOne(_ sender: UIButton) {
         
     }
@@ -57,6 +57,21 @@ class ViewController: UIViewController {
     @IBAction func BlankBoxNine(_ sender: UIButton) {
         
     }
+    
+    
+    //Answer Buttons
+    @IBAction func AnswerButton1(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func AnswerButton2(_ sender: UIButton) {
+        
+    }
+    
+    
+    
+    
+    
     
     
     
