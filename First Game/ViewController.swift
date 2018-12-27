@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
+    let Player1 = "X"
+    let Player2 = "O"
     
     
     //Blank Box Buttons
@@ -18,7 +19,7 @@ class ViewController: UIViewController {
         
     }
     
-    
+
     @IBAction func BlankBoxTwo(_ sender: UIButton) {
         
     }
@@ -60,11 +61,12 @@ class ViewController: UIViewController {
     
     
     //Answer Buttons
-    @IBAction func AnswerButton1(_ sender: UIButton) {
+    @IBAction func Player1(_ sender: UIButton) {
         
     }
     
-    @IBAction func AnswerButton2(_ sender: UIButton) {
+    
+    @IBAction func Player2(_ sender: UIButton) {
         
     }
     
