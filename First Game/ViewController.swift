@@ -14,52 +14,36 @@ class ViewController: UIViewController {
     let Player2 = "O"
     
     
+    
     //Blank Box Buttons
-    @IBAction func BlankBoxOne(_ sender: UIButton) {
-        
-    }
+    
+    @IBOutlet weak var BlankBoxOne: UIButton!
+    
+    
+    @IBOutlet weak var BlankBoxTwo: UIButton!
+    
+   
+    @IBOutlet weak var BlankBoxThree: UIButton!
+    
+    
+    @IBOutlet weak var BlankBoxFour: UIButton!
+    
+    
+    @IBOutlet weak var BlankBoxFive: UIButton!
+    
+    
+    @IBOutlet weak var BlankBoxSix: UIButton!
+    
+    
+    @IBOutlet weak var BlankBoxSeven: UIButton!
+    
+    
+    @IBOutlet weak var BlankBoxEight: UIButton!
+    
+    
+    @IBOutlet weak var BlankBoxNine: UIButton!
     
 
-    @IBAction func BlankBoxTwo(_ sender: UIButton) {
-        
-    }
-    
-    
-    @IBAction func BlankBoxThree(_ sender: UIButton) {
-        
-    }
-    
-    
-    @IBAction func BlankBoxFour(_ sender: UIButton) {
-        
-    }
-    
-    
-    @IBAction func BlankBoxFive(_ sender: UIButton) {
-        
-    }
-    
-    
-    @IBAction func BlankBoxSix(_ sender: UIButton) {
-        
-    }
-    
-    
-    @IBAction func BlankBoxSeven(_ sender: UIButton) {
-        
-    }
-    
-    
-    @IBAction func BlankBoxEight(_ sender: UIButton) {
-        
-    }
-    
-    
-    @IBAction func BlankBoxNine(_ sender: UIButton) {
-        
-    }
-    
-    
     //Answer Buttons
     @IBAction func Player1(_ sender: UIButton) {
         
@@ -82,8 +66,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
-
+        
+        BlankBoxOne.setTitle("", for: .normal)
+        BlankBoxTwo.setTitle("", for: .normal)
+        BlankBoxThree.setTitle("", for: .normal)
+        BlankBoxFour.setTitle("", for: .normal)
+        BlankBoxFive.setTitle("", for: .normal)
+        BlankBoxSix.setTitle("", for: .normal)
+        BlankBoxSeven.setTitle("", for: .normal)
+        BlankBoxEight.setTitle("", for: .normal)
+        BlankBoxEight.setTitle("", for: .normal)
 
 }
 
+}
