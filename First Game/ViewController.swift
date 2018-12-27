@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
+    let 
     
     
     //Press the boxes and then it will give choice of "X" or "O"
