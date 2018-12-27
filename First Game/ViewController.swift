@@ -75,7 +75,7 @@ class ViewController: UIViewController {
         BlankBoxSix.setTitle("", for: .normal)
         BlankBoxSeven.setTitle("", for: .normal)
         BlankBoxEight.setTitle("", for: .normal)
-        BlankBoxEight.setTitle("", for: .normal)
+        BlankBoxNine.setTitle("", for: .normal)
 
 }
 
