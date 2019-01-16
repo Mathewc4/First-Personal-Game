@@ -34,48 +34,48 @@ class ViewController: UIViewController {
     
     //Blank Box Buttons
     @IBAction func boxOne(_ sender: UIButton) {
-        if turnNumber == 1 {
+        if sender.tag == 1 && turnNumber == 1 {
             print("Player X chose box one")
-             title = B1A1
             turnNumber = turnNumber + 1
+            return boxChoose()
         }
         
-        if turnNumber == 2 {
+        if sender.tag == 1 && turnNumber == 2 {
             print("Player O chose box one")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 3 {
+        if sender.tag == 1 && turnNumber == 3 {
             print("Player X chose box one")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 4 {
+        if sender.tag == 1 && turnNumber == 4 {
             print("Player O chose box one")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 5 {
+        if sender.tag == 1 && turnNumber == 5 {
             print("Player X chose box one")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 6 {
+        if sender.tag == 1 && turnNumber == 6 {
             print("Player O chose box one")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 7 {
+        if sender.tag == 1 && turnNumber == 7 {
             print("Player X chose box one")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 8 {
+        if sender.tag == 1 && turnNumber == 8 {
             print("Player O chose box one")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 9 {
+        if sender.tag == 1 && turnNumber == 9 {
             print("Player X chose box one")
             turnNumber = turnNumber + 1
         }
@@ -83,47 +83,47 @@ class ViewController: UIViewController {
     }
     
     @IBAction func boxTwo(_ sender: UIButton) {
-        if turnNumber == 1 {
+        if sender.tag == 2 && turnNumber == 1 {
             print("Player X chose box two")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 2 {
+        if sender.tag == 2 && turnNumber == 2 {
             print("Player O chose box two")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 3 {
+        if sender.tag == 2 && turnNumber == 3 {
             print("Player X chose box two")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 4 {
+        if sender.tag == 2 && turnNumber == 4 {
             print("Player O chose box two")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 5 {
+        if sender.tag == 2 && turnNumber == 5 {
             print("Player X chose box two")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 6 {
+        if sender.tag == 2 && turnNumber == 6 {
             print("Player O chose box two")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 7 {
+        if sender.tag == 2 && turnNumber == 7 {
             print("Player X chose box two")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 8 {
+        if sender.tag == 2 && turnNumber == 8 {
             print("Player O chose box two")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 9 {
+        if sender.tag == 2 && turnNumber == 9 {
             print("Player X chose box two")
             turnNumber = turnNumber + 1
         }
@@ -131,329 +131,329 @@ class ViewController: UIViewController {
     }
     
     @IBAction func boxThree(_ sender: UIButton) {
-        if turnNumber == 1 {
+        if sender.tag == 3 && turnNumber == 1 {
             print("Player X chose box three")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 2 {
+        if sender.tag == 3 && turnNumber == 2 {
             print("Player O chose box three")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 3 {
+        if sender.tag == 3 && turnNumber == 3 {
             print("Player X chose box three")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 4 {
+        if sender.tag == 3 && turnNumber == 4 {
             print("Player O chose box three")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 5 {
+        if sender.tag == 3 && turnNumber == 5 {
             print("Player X chose box three")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 6 {
+        if sender.tag == 3 && turnNumber == 6 {
             print("Player O chose box three")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 7 {
+        if sender.tag == 3 && turnNumber == 7 {
             print("Player X chose box three")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 8 {
+        if sender.tag == 3 && turnNumber == 8 {
             print("Player O chose box three")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 9 {
+        if sender.tag == 3 && turnNumber == 9 {
             print("Player X chose box three")
             turnNumber = turnNumber + 1
         }
     }
     
     @IBAction func boxFour(_ sender: UIButton) {
-        if turnNumber == 1 {
+        if sender.tag == 4 && turnNumber == 1 {
             print("Player X chose box four")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 2 {
+        if sender.tag == 4 && turnNumber == 2 {
             print("Player O chose box four")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 3 {
+        if sender.tag == 4 && turnNumber == 3 {
             print("Player X chose box four")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 4 {
+        if sender.tag == 4 && turnNumber == 4 {
             print("Player O chose box four")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 5 {
+        if sender.tag == 4 && turnNumber == 5 {
             print("Player X chose box four")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 6 {
+        if sender.tag == 4 && turnNumber == 6 {
             print("Player O chose box four")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 7 {
+        if sender.tag == 4 && turnNumber == 7 {
             print("Player X chose box four")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 8 {
+        if sender.tag == 4 && turnNumber == 8 {
             print("Player O chose box four")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 9 {
+        if sender.tag == 4 && turnNumber == 9 {
             print("Player X chose box four")
             turnNumber = turnNumber + 1
         }
     }
     
     @IBAction func boxFive(_ sender: UIButton) {
-        if turnNumber == 1 {
+        if sender.tag == 5 && turnNumber == 1 {
             print("Player X chose box five")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 2 {
+        if sender.tag == 5 && turnNumber == 2 {
             print("Player O chose box five")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 3 {
+        if sender.tag == 5 && turnNumber == 3 {
             print("Player X chose box five")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 4 {
+        if sender.tag == 5 && turnNumber == 4 {
             print("Player O chose box five")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 5 {
+        if sender.tag == 5 && turnNumber == 5 {
             print("Player X chose box five")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 6 {
+        if sender.tag == 5 && turnNumber == 6 {
             print("Player O chose box five")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 7 {
+        if sender.tag == 5 && turnNumber == 7 {
             print("Player X chose box five")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 8 {
+        if sender.tag == 5 && turnNumber == 8 {
             print("Player O chose box five")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 9 {
+        if sender.tag == 5 && turnNumber == 9 {
             print("Player X chose box five")
             turnNumber = turnNumber + 1
         }
     }
     
     @IBAction func boxSix(_ sender: UIButton) {
-        if turnNumber == 1 {
+        if sender.tag == 6 && turnNumber == 1 {
             print("Player X chose box six")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 2 {
+        if sender.tag == 6 && turnNumber == 2 {
             print("Player O chose box six")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 3 {
+        if sender.tag == 6 && turnNumber == 3 {
             print("Player X chose box six")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 4 {
+        if sender.tag == 6 && turnNumber == 4 {
             print("Player O chose box six")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 5 {
+        if sender.tag == 6 && turnNumber == 5 {
             print("Player X chose box six")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 6 {
+        if sender.tag == 6 && turnNumber == 6 {
             print("Player O chose box six")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 7 {
+        if sender.tag == 6 && turnNumber == 7 {
             print("Player X chose box six")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 8 {
+        if sender.tag == 6 && turnNumber == 8 {
             print("Player O chose box six")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 9 {
+        if sender.tag == 6 && turnNumber == 9 {
             print("Player X chose box six")
             turnNumber = turnNumber + 1
         }
     }
     
     @IBAction func boxSeven(_ sender: UIButton) {
-        if turnNumber == 1 {
+        if sender.tag == 7 && turnNumber == 1 {
             print("Player X chose box seven")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 2 {
+        if sender.tag == 7 && turnNumber == 2 {
             print("Player O chose box seven")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 3 {
+        if sender.tag == 7 && turnNumber == 3 {
             print("Player X chose box seven")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 4 {
+        if sender.tag == 7 && turnNumber == 4 {
             print("Player O chose box seven")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 5 {
+        if sender.tag == 7 && turnNumber == 5 {
             print("Player X chose box seven")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 6 {
+        if sender.tag == 7 && turnNumber == 6 {
             print("Player O chose box seven")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 7 {
+        if sender.tag == 7 && turnNumber == 7 {
             print("Player X chose box seven")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 8 {
+        if sender.tag == 7 && turnNumber == 8 {
             print("Player O chose box seven")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 9 {
+        if sender.tag == 7 && turnNumber == 9 {
             print("Player X chose box seven")
             turnNumber = turnNumber + 1
         }
     }
     
     @IBAction func boxEight(_ sender: UIButton) {
-        if turnNumber == 1 {
+        if sender.tag == 8 && turnNumber == 1 {
             print("Player X chose box eight")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 2 {
+        if sender.tag == 8 && turnNumber == 2 {
             print("Player O chose box eight")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 3 {
+        if sender.tag == 8 && turnNumber == 3 {
             print("Player X chose box eight")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 4 {
+        if sender.tag == 8 && turnNumber == 4 {
             print("Player O chose box eight")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 5 {
+        if sender.tag == 8 && turnNumber == 5 {
             print("Player X chose box eight")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 6 {
+        if sender.tag == 8 && turnNumber == 6 {
             print("Player O chose box eight")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 7 {
+        if sender.tag == 8 && turnNumber == 7 {
             print("Player X chose box eight")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 8 {
+        if sender.tag == 8 && turnNumber == 8 {
             print("Player O chose box eight")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 9 {
+        if sender.tag == 8 && turnNumber == 9 {
             print("Player X chose box eight")
             turnNumber = turnNumber + 1
         }
     }
     
     @IBAction func boxNine(_ sender: UIButton) {
-        if turnNumber == 1 {
+        if sender.tag == 9 && turnNumber == 1 {
             print("Player X chose box nine")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 2 {
+        if sender.tag == 9 && turnNumber == 2 {
             print("Player O chose box nine")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 3 {
+        if sender.tag == 9 && turnNumber == 3 {
             print("Player X chose box nine")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 4 {
+        if sender.tag == 9 && turnNumber == 4 {
             print("Player O chose box nine")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 5 {
+        if sender.tag == 9 && turnNumber == 5 {
             print("Player X chose box nine")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 6 {
+        if sender.tag == 9 && turnNumber == 6 {
             print("Player O chose box nine")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 7 {
+        if sender.tag == 9 && turnNumber == 7 {
             print("Player X chose box nine")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 8 {
+        if sender.tag == 9 && turnNumber == 8 {
             print("Player O chose box nine")
             turnNumber = turnNumber + 1
         }
         
-        if turnNumber == 9 {
+        if sender.tag == 9 && turnNumber == 9 {
             print("Player X chose box nine")
             turnNumber = turnNumber + 1
         }
