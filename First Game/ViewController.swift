@@ -13,50 +13,514 @@ class ViewController: UIViewController {
     let Player1 = "X"
     let Player2 = "O"
     
-    
+    let B1A1 = "X"
+    let B1A2 = "O"
+    let B2A1 = "X"
+    let B2A2 = "O"
+    let B3A1 = "X"
+    let B3A2 = "O"
+    let B4A1 = "X"
+    let B4A2 = "O"
+    let B5A1 = "X"
+    let B5A2 = "O"
+    let B6A1 = "X"
+    let B6A2 = "O"
+    let B7A1 = "X"
+    let B7A2 = "O"
+    let B8A1 = "X"
+    let B8A2 = "O"
+    let B9A1 = "X"
+    let B9A2 = "O"
     
     //Blank Box Buttons
+    @IBAction func boxOne(_ sender: UIButton) {
+        if turnNumber == 1 {
+            print("Player X chose box one")
+             title = B1A1
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 2 {
+            print("Player O chose box one")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 3 {
+            print("Player X chose box one")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 4 {
+            print("Player O chose box one")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 5 {
+            print("Player X chose box one")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 6 {
+            print("Player O chose box one")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 7 {
+            print("Player X chose box one")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 8 {
+            print("Player O chose box one")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 9 {
+            print("Player X chose box one")
+            turnNumber = turnNumber + 1
+        }
+        
+    }
     
-    @IBOutlet weak var BlankBoxOne: UIButton!
+    @IBAction func boxTwo(_ sender: UIButton) {
+        if turnNumber == 1 {
+            print("Player X chose box two")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 2 {
+            print("Player O chose box two")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 3 {
+            print("Player X chose box two")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 4 {
+            print("Player O chose box two")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 5 {
+            print("Player X chose box two")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 6 {
+            print("Player O chose box two")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 7 {
+            print("Player X chose box two")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 8 {
+            print("Player O chose box two")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 9 {
+            print("Player X chose box two")
+            turnNumber = turnNumber + 1
+        }
+       
+    }
+    
+    @IBAction func boxThree(_ sender: UIButton) {
+        if turnNumber == 1 {
+            print("Player X chose box three")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 2 {
+            print("Player O chose box three")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 3 {
+            print("Player X chose box three")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 4 {
+            print("Player O chose box three")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 5 {
+            print("Player X chose box three")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 6 {
+            print("Player O chose box three")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 7 {
+            print("Player X chose box three")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 8 {
+            print("Player O chose box three")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 9 {
+            print("Player X chose box three")
+            turnNumber = turnNumber + 1
+        }
+    }
+    
+    @IBAction func boxFour(_ sender: UIButton) {
+        if turnNumber == 1 {
+            print("Player X chose box four")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 2 {
+            print("Player O chose box four")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 3 {
+            print("Player X chose box four")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 4 {
+            print("Player O chose box four")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 5 {
+            print("Player X chose box four")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 6 {
+            print("Player O chose box four")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 7 {
+            print("Player X chose box four")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 8 {
+            print("Player O chose box four")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 9 {
+            print("Player X chose box four")
+            turnNumber = turnNumber + 1
+        }
+    }
+    
+    @IBAction func boxFive(_ sender: UIButton) {
+        if turnNumber == 1 {
+            print("Player X chose box five")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 2 {
+            print("Player O chose box five")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 3 {
+            print("Player X chose box five")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 4 {
+            print("Player O chose box five")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 5 {
+            print("Player X chose box five")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 6 {
+            print("Player O chose box five")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 7 {
+            print("Player X chose box five")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 8 {
+            print("Player O chose box five")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 9 {
+            print("Player X chose box five")
+            turnNumber = turnNumber + 1
+        }
+    }
+    
+    @IBAction func boxSix(_ sender: UIButton) {
+        if turnNumber == 1 {
+            print("Player X chose box six")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 2 {
+            print("Player O chose box six")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 3 {
+            print("Player X chose box six")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 4 {
+            print("Player O chose box six")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 5 {
+            print("Player X chose box six")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 6 {
+            print("Player O chose box six")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 7 {
+            print("Player X chose box six")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 8 {
+            print("Player O chose box six")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 9 {
+            print("Player X chose box six")
+            turnNumber = turnNumber + 1
+        }
+    }
+    
+    @IBAction func boxSeven(_ sender: UIButton) {
+        if turnNumber == 1 {
+            print("Player X chose box seven")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 2 {
+            print("Player O chose box seven")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 3 {
+            print("Player X chose box seven")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 4 {
+            print("Player O chose box seven")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 5 {
+            print("Player X chose box seven")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 6 {
+            print("Player O chose box seven")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 7 {
+            print("Player X chose box seven")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 8 {
+            print("Player O chose box seven")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 9 {
+            print("Player X chose box seven")
+            turnNumber = turnNumber + 1
+        }
+    }
+    
+    @IBAction func boxEight(_ sender: UIButton) {
+        if turnNumber == 1 {
+            print("Player X chose box eight")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 2 {
+            print("Player O chose box eight")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 3 {
+            print("Player X chose box eight")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 4 {
+            print("Player O chose box eight")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 5 {
+            print("Player X chose box eight")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 6 {
+            print("Player O chose box eight")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 7 {
+            print("Player X chose box eight")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 8 {
+            print("Player O chose box eight")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 9 {
+            print("Player X chose box eight")
+            turnNumber = turnNumber + 1
+        }
+    }
+    
+    @IBAction func boxNine(_ sender: UIButton) {
+        if turnNumber == 1 {
+            print("Player X chose box nine")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 2 {
+            print("Player O chose box nine")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 3 {
+            print("Player X chose box nine")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 4 {
+            print("Player O chose box nine")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 5 {
+            print("Player X chose box nine")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 6 {
+            print("Player O chose box nine")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 7 {
+            print("Player X chose box nine")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 8 {
+            print("Player O chose box nine")
+            turnNumber = turnNumber + 1
+        }
+        
+        if turnNumber == 9 {
+            print("Player X chose box nine")
+            turnNumber = turnNumber + 1
+        }
+    }
     
     
-    @IBOutlet weak var BlankBoxTwo: UIButton!
-    
-   
-    @IBOutlet weak var BlankBoxThree: UIButton!
     
     
-    @IBOutlet weak var BlankBoxFour: UIButton!
     
     
-    @IBOutlet weak var BlankBoxFive: UIButton!
+    //Label which displays which players turn it is
     
+    @IBOutlet weak var PlayerDisplay: UILabel! //TAG = 10
     
-    @IBOutlet weak var BlankBoxSix: UIButton!
-    
-    
-    @IBOutlet weak var BlankBoxSeven: UIButton!
-    
-    
-    @IBOutlet weak var BlankBoxEight: UIButton!
-    
-    
-    @IBOutlet weak var BlankBoxNine: UIButton!
-    
+    //Tracks the what turn the game is on
+    var turnNumber = 1
 
-    //Answer Buttons
-    @IBAction func Player1(_ sender: UIButton) {
+    
+    //puts an X or O in the box the player wants
+    func boxChoose(){
         
-    }
-    
-    
-    @IBAction func Player2(_ sender: UIButton) {
+        if turnNumber == 1{
+            PlayerDisplay.text = String("It is Player X's turn.")
+            
+            
+        }
         
+        if turnNumber == 2{
+            PlayerDisplay.text = String("It is Player O's turn.")
+            
+        }
+        
+        if turnNumber == 3{
+            PlayerDisplay.text = String("It is Player X's turn.")
+            
+        }
+        
+        if turnNumber == 4{
+            PlayerDisplay.text = String("It is Player O's turn.")
+            
+        }
+        
+        if turnNumber == 5{
+            PlayerDisplay.text = String("It is Player X's turn.")
+            
+        }
+        
+        if turnNumber == 6{
+            PlayerDisplay.text = String("It is Player O's turn.")
+            
+        }
+        
+        if turnNumber == 7{
+            PlayerDisplay.text = String("It is Player X's turn.")
+            
+        }
+        
+        if turnNumber == 8{
+            PlayerDisplay.text = String("It is Player O's turn.")
+            
+        }
+        
+        if turnNumber == 9{
+            PlayerDisplay.text = String("It is Player X's turn.")
+            
+        }
     }
-    
-    
-    
-    
     
     
     
@@ -67,16 +531,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        BlankBoxOne.setTitle("", for: .normal)
-        BlankBoxTwo.setTitle("", for: .normal)
-        BlankBoxThree.setTitle("", for: .normal)
-        BlankBoxFour.setTitle("", for: .normal)
-        BlankBoxFive.setTitle("", for: .normal)
-        BlankBoxSix.setTitle("", for: .normal)
-        BlankBoxSeven.setTitle("", for: .normal)
-        BlankBoxEight.setTitle("", for: .normal)
-        BlankBoxNine.setTitle("", for: .normal)
+         PlayerDisplay.text = "Player X will start."
+        
+    
+//        boxOne.setTitle("", for: .normal)
+//        boxTwo.setTitle("", for: .normal)
+//        boxThree.setTitle("", for: .normal)
+//        boxFour.setTitle("", for: .normal)
+//        boxFive.setTitle("", for: .normal)
+//        boxSix.setTitle("", for: .normal)
+//        boxSeven.setTitle("", for: .normal)
+//        boxEight.setTitle("", for: .normal)
+//        boxNine.setTitle("", for: .normal)
+//
+        
+        
+        
 
-}
+    }
 
 }
