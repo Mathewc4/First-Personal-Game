@@ -97,8 +97,8 @@
                                     <action selector="boxSeven:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PUA-hz-ucI"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player will be displayed here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ccx-xL-kwj">
-                                <rect key="frame" x="72" y="403" width="219" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player will be displayed here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ccx-xL-kwj">
+                                <rect key="frame" x="45" y="403" width="285" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -110,6 +110,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="Box1" destination="6qA-z2-dab" id="AdV-hO-JMG"/>
+                        <outlet property="Box2" destination="Vlf-qS-P9A" id="woo-tz-MnU"/>
+                        <outlet property="Box3" destination="bRz-Bh-DMb" id="LZX-S8-Kwo"/>
+                        <outlet property="Box4" destination="QNF-7g-9H1" id="Ivj-L9-CAK"/>
+                        <outlet property="Box5" destination="9ph-m3-E6i" id="WsZ-aa-0iI"/>
+                        <outlet property="Box6" destination="cmC-0o-TQV" id="tCb-2P-IvU"/>
+                        <outlet property="Box7" destination="Zkc-MC-ohi" id="V2D-d2-Xn1"/>
+                        <outlet property="Box8" destination="x4r-ks-zCK" id="A1f-HL-suU"/>
+                        <outlet property="Box9" destination="RL0-xN-sz1" id="Iqy-C4-xdJ"/>
                         <outlet property="PlayerDisplay" destination="Ccx-xL-kwj" id="WqR-Fr-sga"/>
                     </connections>
                 </viewController>

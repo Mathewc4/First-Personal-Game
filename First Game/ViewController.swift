@@ -13,27 +13,19 @@ class ViewController: UIViewController {
     let Player1 = "X"
     let Player2 = "O"
     
-    let B1A1 = "X"
-    let B1A2 = "O"
-    let B2A1 = "X"
-    let B2A2 = "O"
-    let B3A1 = "X"
-    let B3A2 = "O"
-    let B4A1 = "X"
-    let B4A2 = "O"
-    let B5A1 = "X"
-    let B5A2 = "O"
-    let B6A1 = "X"
-    let B6A2 = "O"
-    let B7A1 = "X"
-    let B7A2 = "O"
-    let B8A1 = "X"
-    let B8A2 = "O"
-    let B9A1 = "X"
-    let B9A2 = "O"
+    let AnswerX = "X"
+    let AnswerO = "O"
+   
     
     //Blank Box Buttons
     @IBAction func boxOne(_ sender: UIButton) {
+        
+        if sender.tag == 1 && turnNumber == 0 {
+            print("The game has started")
+            turnNumber = turnNumber + 1
+            return boxChoose()
+        }
+        
         if sender.tag == 1 && turnNumber == 1 {
             print("Player X chose box one")
             turnNumber = turnNumber + 1
@@ -547,58 +539,71 @@ class ViewController: UIViewController {
     //Label which displays which players turn it is
     
     @IBOutlet weak var PlayerDisplay: UILabel! //TAG = 10
+    @IBOutlet weak var Box1: UIButton!
+    @IBOutlet weak var Box2: UIButton!
+    @IBOutlet weak var Box3: UIButton!
+    @IBOutlet weak var Box4: UIButton!
+    @IBOutlet weak var Box5: UIButton!
+    @IBOutlet weak var Box6: UIButton!
+    @IBOutlet weak var Box7: UIButton!
+    @IBOutlet weak var Box8: UIButton!
+    @IBOutlet weak var Box9: UIButton!
+   
     
     //Tracks the what turn the game is on
-    var turnNumber = 1
+    var turnNumber = 0
 
     
     //puts an X or O in the box the player wants
     func boxChoose(){
         
+        if turnNumber == 0{
+            PlayerDisplay.text = String("Press any box to start")
+        }
+        
         if turnNumber == 1{
             PlayerDisplay.text = String("It is Player X's turn.")
-            
-            
+            Box1.setTitle(AnswerX, for: UIControl.State.normal)
         }
         
         if turnNumber == 2{
             PlayerDisplay.text = String("It is Player O's turn.")
-            
+            Box2.setTitle(AnswerO, for: UIControl.State.normal)
         }
         
         if turnNumber == 3{
             PlayerDisplay.text = String("It is Player X's turn.")
-            
+            Box1.setTitle(AnswerX, for: UIControl.State.normal)
         }
         
         if turnNumber == 4{
             PlayerDisplay.text = String("It is Player O's turn.")
-            
+            Box2.setTitle(AnswerO, for: UIControl.State.normal)
         }
         
         if turnNumber == 5{
             PlayerDisplay.text = String("It is Player X's turn.")
-            
+            Box1.setTitle(AnswerX, for: UIControl.State.normal)
         }
         
         if turnNumber == 6{
             PlayerDisplay.text = String("It is Player O's turn.")
-            
+            Box2.setTitle(AnswerO, for: UIControl.State.normal)
         }
         
         if turnNumber == 7{
             PlayerDisplay.text = String("It is Player X's turn.")
-            
+            Box1.setTitle(AnswerX, for: UIControl.State.normal)
         }
         
         if turnNumber == 8{
             PlayerDisplay.text = String("It is Player O's turn.")
-            
+            Box2.setTitle(AnswerO, for: UIControl.State.normal)
         }
         
         if turnNumber == 9{
             PlayerDisplay.text = String("It is Player X's turn.")
-            
+           Box1.setTitle(AnswerX, for: UIControl.State.normal)
         }
     }
     
@@ -611,7 +616,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-         PlayerDisplay.text = "Player X will start."
+         PlayerDisplay.text = "Press any box to start the game."
         
     
 //        boxOne.setTitle("", for: .normal)
