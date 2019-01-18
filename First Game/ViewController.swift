@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     // This variable will swtich from "X" to "O" as the game progresses
-    var Player = "X"
+    var Player = "O"
     
     //Tracks the what turn the game is on
     var turnNumber = 0
@@ -22,8 +22,29 @@ class ViewController: UIViewController {
     
     let AnswerX = "X"
     let AnswerO = "O"
-   
     
+    
+    //Starts the game
+    @IBAction func startGame(_ sender: UIButton) {
+        PlayerDisplay.text = "Player X will start"
+        addNewTurn()
+        
+    }
+    
+    
+    
+    
+    //Restarts the game
+    @IBAction func restartGame(_ sender: UIButton) {
+        PlayerDisplay.text = "Press the start to begin the game"
+        boxNumber = 0
+        turnNumber = 0
+        Player = "O"
+        eraseBoxes()
+    }
+    
+    
+   
     //Blank Box Buttons
     @IBAction func boxOne(_ sender: UIButton) {
         if Player == "X" {
@@ -56,7 +77,7 @@ class ViewController: UIViewController {
             addNewTurn()
             return boxChoose()
         }
-       
+        
     }
     
     @IBAction func boxThree(_ sender: UIButton) {
@@ -153,7 +174,7 @@ class ViewController: UIViewController {
             addNewTurn()
             return boxChoose()
         }
-        }
+    }
     
     
     @IBAction func boxNine(_ sender: UIButton) {
@@ -170,7 +191,7 @@ class ViewController: UIViewController {
             addNewTurn()
             return boxChoose()
         }
-      
+        
     }
     
     
@@ -190,10 +211,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var Box7: UIButton!
     @IBOutlet weak var Box8: UIButton!
     @IBOutlet weak var Box9: UIButton!
-   
     
     
-
+    
+    
     
     //puts an X or O in the box the player wants
     func boxChoose() {
@@ -204,47 +225,46 @@ class ViewController: UIViewController {
         
         if turnNumber == 2{
             PlayerDisplay.text = String("It is Player O's turn.")
-            Box1.setTitle(AnswerX, for: UIControl.State.normal)
+            
         }
         
         if turnNumber == 3{
             PlayerDisplay.text = String("It is Player X's turn.")
-            Box2.setTitle(AnswerO, for: UIControl.State.normal)
+            
         }
         
         if turnNumber == 4{
             PlayerDisplay.text = String("It is Player O's turn.")
-            Box1.setTitle(AnswerX, for: UIControl.State.normal)
+            
         }
         
         if turnNumber == 5{
             PlayerDisplay.text = String("It is Player X's turn.")
-            Box2.setTitle(AnswerO, for: UIControl.State.normal)
+            
         }
         
         if turnNumber == 6{
             PlayerDisplay.text = String("It is Player O's turn.")
-            Box1.setTitle(AnswerX, for: UIControl.State.normal)
+            
         }
         
         if turnNumber == 7{
             PlayerDisplay.text = String("It is Player X's turn.")
-            Box2.setTitle(AnswerO, for: UIControl.State.normal)
+            
         }
         
         if turnNumber == 8{
             PlayerDisplay.text = String("It is Player O's turn.")
-            Box1.setTitle(AnswerX, for: UIControl.State.normal)
         }
         
         if turnNumber == 9{
             PlayerDisplay.text = String("It is Player X's turn.")
-            Box2.setTitle(AnswerO, for: UIControl.State.normal)
+            
         }
         
         if turnNumber == 10{
             PlayerDisplay.text = String("It is Player O's turn.")
-           Box1.setTitle(AnswerX, for: UIControl.State.normal)
+            
         }
     }
     
@@ -313,33 +333,30 @@ class ViewController: UIViewController {
         }
     }
     
+    //when game restarts this will make the boxes blank again
+    func eraseBoxes() {
+        Box1.setTitle("", for: UIControl.State.normal)
+        Box2.setTitle("", for: UIControl.State.normal)
+        Box3.setTitle("", for: UIControl.State.normal)
+        Box4.setTitle("", for: UIControl.State.normal)
+        Box5.setTitle("", for: UIControl.State.normal)
+        Box6.setTitle("", for: UIControl.State.normal)
+        Box7.setTitle("", for: UIControl.State.normal)
+        Box8.setTitle("", for: UIControl.State.normal)
+        Box9.setTitle("", for: UIControl.State.normal)
+    }
     
     
-   
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-         PlayerDisplay.text = "Press any box to start the game."
+        PlayerDisplay.text = "Press the start to begin the game"
         
         
-        
-    
-//        boxOne.setTitle("", for: .normal)
-//        boxTwo.setTitle("", for: .normal)
-//        boxThree.setTitle("", for: .normal)
-//        boxFour.setTitle("", for: .normal)
-//        boxFive.setTitle("", for: .normal)
-//        boxSix.setTitle("", for: .normal)
-//        boxSeven.setTitle("", for: .normal)
-//        boxEight.setTitle("", for: .normal)
-//        boxNine.setTitle("", for: .normal)
-//
-        
-        
-        
-
     }
-
+    
 }
