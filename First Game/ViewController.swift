@@ -13,6 +13,12 @@ class ViewController: UIViewController {
     // This variable will swtich from "X" to "O" as the game progresses
     var Player = "X"
     
+    //Tracks the what turn the game is on
+    var turnNumber = 0
+    
+    //boxNumber
+    var boxNumber = 0
+    
     
     let AnswerX = "X"
     let AnswerO = "O"
@@ -20,63 +26,16 @@ class ViewController: UIViewController {
     
     //Blank Box Buttons
     @IBAction func boxOne(_ sender: UIButton) {
-        
-        if sender.tag == 1 && turnNumber == 0 {
-            print("The game has started")
+        if Player == "X" {
+            boxNumber = 1
+            markBoxX()
             addNewTurn()
             return boxChoose()
         }
         
-        if sender.tag == 1 && turnNumber == 1 {
-            print("Player X chose box one")
-            addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 1 && turnNumber == 2 {
-            print("Player O chose box one")
-            addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 1 && turnNumber == 3 {
-            print("Player X chose box one")
-            addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 1 && turnNumber == 4 {
-            print("Player O chose box one")
-            addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 1 && turnNumber == 5 {
-            print("Player X chose box one")
-            addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 1 && turnNumber == 6 {
-            print("Player O chose box one")
-            addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 1 && turnNumber == 7 {
-            print("Player X chose box one")
-            addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 1 && turnNumber == 8 {
-            print("Player O chose box one")
-            addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 1 && turnNumber == 9 {
-            print("Player X chose box one")
+        if Player == "O" {
+            boxNumber = 1
+            markBoxO()
             addNewTurn()
             return boxChoose()
         }
@@ -84,397 +43,118 @@ class ViewController: UIViewController {
     }
     
     @IBAction func boxTwo(_ sender: UIButton) {
-        if sender.tag == 2 && turnNumber == 1 {
-            print("Player X chose box two")
-             addNewTurn()
+        if Player == "X" {
+            boxNumber = 2
+            markBoxX()
+            addNewTurn()
             return boxChoose()
         }
         
-        if sender.tag == 2 && turnNumber == 2 {
-            print("Player O chose box two")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 2 && turnNumber == 3 {
-            print("Player X chose box two")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 2 && turnNumber == 4 {
-            print("Player O chose box two")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 2 && turnNumber == 5 {
-            print("Player X chose box two")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 2 && turnNumber == 6 {
-            print("Player O chose box two")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 2 && turnNumber == 7 {
-            print("Player X chose box two")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 2 && turnNumber == 8 {
-            print("Player O chose box two")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 2 && turnNumber == 9 {
-            print("Player X chose box two")
-             addNewTurn()
+        if Player == "O" {
+            boxNumber = 2
+            markBoxO()
+            addNewTurn()
             return boxChoose()
         }
        
     }
     
     @IBAction func boxThree(_ sender: UIButton) {
-        if sender.tag == 3 && turnNumber == 1 {
-            print("Player X chose box three")
-             addNewTurn()
+        if Player == "X" {
+            boxNumber = 3
+            markBoxX()
+            addNewTurn()
             return boxChoose()
         }
         
-        if sender.tag == 3 && turnNumber == 2 {
-            print("Player O chose box three")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 3 && turnNumber == 3 {
-            print("Player X chose box three")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 3 && turnNumber == 4 {
-            print("Player O chose box three")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 3 && turnNumber == 5 {
-            print("Player X chose box three")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 3 && turnNumber == 6 {
-            print("Player O chose box three")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 3 && turnNumber == 7 {
-            print("Player X chose box three")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 3 && turnNumber == 8 {
-            print("Player O chose box three")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 3 && turnNumber == 9 {
-            print("Player X chose box three")
-             addNewTurn()
+        if Player == "O" {
+            boxNumber = 3
+            markBoxO()
+            addNewTurn()
             return boxChoose()
         }
     }
     
     @IBAction func boxFour(_ sender: UIButton) {
-        if sender.tag == 4 && turnNumber == 1 {
-            print("Player X chose box four")
-             addNewTurn()
+        if Player == "X" {
+            boxNumber = 4
+            markBoxX()
+            addNewTurn()
             return boxChoose()
         }
         
-        if sender.tag == 4 && turnNumber == 2 {
-            print("Player O chose box four")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 4 && turnNumber == 3 {
-            print("Player X chose box four")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 4 && turnNumber == 4 {
-            print("Player O chose box four")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 4 && turnNumber == 5 {
-            print("Player X chose box four")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 4 && turnNumber == 6 {
-            print("Player O chose box four")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 4 && turnNumber == 7 {
-            print("Player X chose box four")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 4 && turnNumber == 8 {
-            print("Player O chose box four")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 4 && turnNumber == 9 {
-            print("Player X chose box four")
-             addNewTurn()
+        if Player == "O" {
+            boxNumber = 4
+            markBoxO()
+            addNewTurn()
             return boxChoose()
         }
     }
     
     @IBAction func boxFive(_ sender: UIButton) {
-        if sender.tag == 5 && turnNumber == 1 {
-            print("Player X chose box five")
-             addNewTurn()
+        if Player == "X" {
+            boxNumber = 5
+            markBoxX()
+            addNewTurn()
             return boxChoose()
         }
         
-        if sender.tag == 5 && turnNumber == 2 {
-            print("Player O chose box five")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 5 && turnNumber == 3 {
-            print("Player X chose box five")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 5 && turnNumber == 4 {
-            print("Player O chose box five")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 5 && turnNumber == 5 {
-            print("Player X chose box five")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 5 && turnNumber == 6 {
-            print("Player O chose box five")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 5 && turnNumber == 7 {
-            print("Player X chose box five")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 5 && turnNumber == 8 {
-            print("Player O chose box five")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 5 && turnNumber == 9 {
-            print("Player X chose box five")
-             addNewTurn()
+        if Player == "O" {
+            boxNumber = 5
+            markBoxO()
+            addNewTurn()
             return boxChoose()
         }
     }
     
     @IBAction func boxSix(_ sender: UIButton) {
-        if sender.tag == 6 && turnNumber == 1 {
-            print("Player X chose box six")
-             addNewTurn()
+        if Player == "X" {
+            boxNumber = 6
+            markBoxX()
+            addNewTurn()
             return boxChoose()
         }
         
-        if sender.tag == 6 && turnNumber == 2 {
-            print("Player O chose box six")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 6 && turnNumber == 3 {
-            print("Player X chose box six")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 6 && turnNumber == 4 {
-            print("Player O chose box six")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 6 && turnNumber == 5 {
-            print("Player X chose box six")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 6 && turnNumber == 6 {
-            print("Player O chose box six")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 6 && turnNumber == 7 {
-            print("Player X chose box six")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 6 && turnNumber == 8 {
-            print("Player O chose box six")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 6 && turnNumber == 9 {
-            print("Player X chose box six")
-             addNewTurn()
+        if Player == "O" {
+            boxNumber = 6
+            markBoxO()
+            addNewTurn()
             return boxChoose()
         }
     }
     
     @IBAction func boxSeven(_ sender: UIButton) {
-        if sender.tag == 7 && turnNumber == 1 {
-            print("Player X chose box seven")
-             addNewTurn()
+        if Player == "X" {
+            boxNumber = 7
+            markBoxX()
+            addNewTurn()
             return boxChoose()
         }
         
-        if sender.tag == 7 && turnNumber == 2 {
-            print("Player O chose box seven")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 7 && turnNumber == 3 {
-            print("Player X chose box seven")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 7 && turnNumber == 4 {
-            print("Player O chose box seven")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 7 && turnNumber == 5 {
-            print("Player X chose box seven")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 7 && turnNumber == 6 {
-            print("Player O chose box seven")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 7 && turnNumber == 7 {
-            print("Player X chose box seven")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 7 && turnNumber == 8 {
-            print("Player O chose box seven")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 7 && turnNumber == 9 {
-            print("Player X chose box seven")
-             addNewTurn()
+        if Player == "O" {
+            boxNumber = 7
+            markBoxO()
+            addNewTurn()
             return boxChoose()
         }
     }
     
     @IBAction func boxEight(_ sender: UIButton) {
-        if sender.tag == 8 && turnNumber == 1 {
-            print("Player X chose box eight")
-             addNewTurn()
+        if Player == "X" {
+            boxNumber = 8
+            markBoxX()
+            addNewTurn()
             return boxChoose()
         }
         
-        if sender.tag == 8 && turnNumber == 2 {
-            print("Player O chose box eight")
-             addNewTurn()
+        if Player == "O" {
+            boxNumber = 8
+            markBoxO()
+            addNewTurn()
             return boxChoose()
         }
-        
-        if sender.tag == 8 && turnNumber == 3 {
-            print("Player X chose box eight")
-             addNewTurn()
-            return boxChoose()
         }
-        
-        if sender.tag == 8 && turnNumber == 4 {
-            print("Player O chose box eight")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 8 && turnNumber == 5 {
-            print("Player X chose box eight")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 8 && turnNumber == 6 {
-            print("Player O chose box eight")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 8 && turnNumber == 7 {
-            print("Player X chose box eight")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 8 && turnNumber == 8 {
-            print("Player O chose box eight")
-             addNewTurn()
-            return boxChoose()
-        }
-        
-        if sender.tag == 8 && turnNumber == 9 {
-            print("Player X chose box eight")
-             addNewTurn()
-            return boxChoose()
-        }
-    }
+    
     
     @IBAction func boxNine(_ sender: UIButton) {
         if Player == "X" {
@@ -486,7 +166,7 @@ class ViewController: UIViewController {
         
         if Player == "O" {
             boxNumber = 9
-            //markBoxO()
+            markBoxO()
             addNewTurn()
             return boxChoose()
         }
@@ -512,8 +192,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var Box9: UIButton!
    
     
-    //Tracks the what turn the game is on
-    var turnNumber = 0
+    
 
     
     //puts an X or O in the box the player wants
@@ -586,14 +265,57 @@ class ViewController: UIViewController {
         switch boxNumber {
         case 1:
             Box1.setTitle(AnswerX, for: UIControl.State.normal)
+        case 2:
+            Box2.setTitle(AnswerX, for: UIControl.State.normal)
+        case 3:
+            Box3.setTitle(AnswerX, for: UIControl.State.normal)
+        case 4:
+            Box4.setTitle(AnswerX, for: UIControl.State.normal)
+        case 5:
+            Box5.setTitle(AnswerX, for: UIControl.State.normal)
+        case 6:
+            Box6.setTitle(AnswerX, for: UIControl.State.normal)
+        case 7:
+            Box7.setTitle(AnswerX, for: UIControl.State.normal)
+        case 8:
+            Box8.setTitle(AnswerX, for: UIControl.State.normal)
+        case 9:
+            Box9.setTitle(AnswerX, for: UIControl.State.normal)
+            
+        default:
+            print("no case completed")
+        }
+    }
+    
+    func markBoxO(){
+        switch boxNumber {
+        case 1:
+            Box1.setTitle(AnswerO, for: UIControl.State.normal)
+        case 2:
+            Box2.setTitle(AnswerO, for: UIControl.State.normal)
+        case 3:
+            Box3.setTitle(AnswerO, for: UIControl.State.normal)
+        case 4:
+            Box4.setTitle(AnswerO, for: UIControl.State.normal)
+        case 5:
+            Box5.setTitle(AnswerO, for: UIControl.State.normal)
+        case 6:
+            Box6.setTitle(AnswerO, for: UIControl.State.normal)
+        case 7:
+            Box7.setTitle(AnswerO, for: UIControl.State.normal)
+        case 8:
+            Box8.setTitle(AnswerO, for: UIControl.State.normal)
+        case 9:
+            Box9.setTitle(AnswerO, for: UIControl.State.normal)
+            
         default:
             print("no case completed")
         }
     }
     
     
-    //boxNumber
-    var boxNumber = 0
+    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
